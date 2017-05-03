@@ -1,0 +1,176 @@
+.controller.custom {
+    background: url(base.png); 
+    height: 558px;
+    width: 866px;
+}
+
+.custom .triggers { /* The triggers are housed inside a div, so this sizes the div properly and positions it */
+    width: 581px;
+    height: 47px;
+    position: absolute;
+    left: 144px;
+    top: 15px;
+}
+
+.custom .trigger {/* These are the actual triggers themselves */
+    width:80px;
+    height:46px;
+    background: url(trigger.png);
+}
+
+.custom .trigger.pressed {
+    background-position: 80px;
+    margin-right: 2px;
+}
+
+.custom .trigger.left {
+    float: left;
+
+}
+
+.custom .trigger.right {
+    transform: scaleX(-1);
+    float: right;
+}
+
+.custom .bumpers {
+    width: 625px;
+    height: 72px;
+    left: 120px;
+    top: 27px;
+    position: absolute;
+}
+
+.custom .bumper{
+    width: 179px;
+    height: 63px;
+    background: url(bumpers.png);
+
+}
+
+.custom .bumper.pressed {
+    background-position: 178px;
+}
+
+.custom .bumper.left{
+    float: left;
+}
+.custom .bumper.right{
+    float: right;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+
+.custom .sticks {
+    position: absolute;
+    margin-top: 244px;
+    width: 404px;
+    margin-left: 240px;
+    height: 96px;
+}
+
+.custom .stick {
+    position: absolute;
+    background: url(stick.png);
+    height: 95px;
+    width: 98px;
+}
+.custom .stick.pressed.left {
+    background-position-x: -105px;
+}
+.custom .stick.pressed.right{
+    background-position-x: -105px;
+}
+.custom .stick.left{
+    left: 8px;
+}
+	
+.custom .stick.right{
+    top: calc(100% - 95px);
+    left: calc(100% - 128px);
+}
+/* Dpad possitioning and sizing */
+.custom .dpad{
+    position: absolute;
+    width: 127px;
+    height: 127px;
+    top: 110px;
+    left: 144px;
+}
+.custom .face{
+    background: url(d-pad.png);
+    position: absolute;
+}
+.custom .face.up, .custom .face.down{
+    width: 42px;
+    height: 49px;
+}
+.custom .face.left, .custom .face.right{
+    width: 49px;
+    height: 43px;
+}
+.custom .face.up{
+    top: 2px;
+    background-position: 322px 0px;
+    left: 42px;
+}
+.custom .face.down{
+    left: 42px;
+    top: 79px;
+    background-position: 228px 0;
+}
+
+.custom .face.left{
+    background-position: 0px 0;
+    width: 47px;
+    height: 42px;
+    top: 41px;
+}
+
+.custom .face.right{
+    top: 41px;
+    right: 0px;
+    background-position: -92px 0;
+}
+.custom .face.pressed{
+    background-position-y: 47px;
+}
+
+/* Positioning and size of the container for the face buttons */
+.custom .abxy{
+    position: absolute;
+    width: 157px;
+    height: 158px;
+    top: 95px;
+    left: 587px;
+}
+/* base class used to simplify the sprite mapping */
+.custom .button{
+position: absolute;
+    width: 55px;
+    height: 55px;
+    background: url(face.svgz);
+    // background: url(ps3-assets/face-buttons.png);
+}
+.custom .button.pressed {
+    background-position-y: -57px;
+}
+.custom .a{
+    background-position: 0 0;
+    top: 105px;
+    left: 50px;
+}
+.custom .b{
+    background-position: -55px 0;
+    top: 50px;
+    right: 0px;
+}
+.custom .x{
+    background-position: -115px 0;
+    top: 50px;
+}
+.custom .y{
+    background-position: -168px 0;
+    left: 50px;
+}
