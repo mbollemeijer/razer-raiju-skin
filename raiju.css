@@ -1,8 +1,14 @@
+
 .controller.custom {
     background: url(base.png); 
     height: 558px;
     width: 866px;
 }
+
+.custom.disconnected { /* This class shows an image when the controller is disconnected */
+    background: url(disconnected.png);
+}
+
 
 .custom .triggers { /* The triggers are housed inside a div, so this sizes the div properly and positions it */
     width: 581px;
@@ -10,6 +16,10 @@
     position: absolute;
     left: 144px;
     top: 15px;
+}
+
+.custom.disconnected .trigger {
+    display: none;
 }
 
 .custom .trigger {/* These are the actual triggers themselves */
@@ -34,16 +44,20 @@
 }
 
 .custom .bumpers {
-    width: 625px;
+    width: 618px;
     height: 72px;
-    left: 120px;
-    top: 27px;
+    left: 125px;
+    top:  24px;
     position: absolute;
+}
+
+.custom.disconnected .bumpers {
+    display: none;
 }
 
 .custom .bumper{
     width: 179px;
-    height: 63px;
+    height: 70px;
     background: url(bumpers.png);
 
 }
@@ -68,6 +82,10 @@
     width: 404px;
     margin-left: 240px;
     height: 96px;
+}
+
+.custom.disconnected .sticks {
+    display: none;
 }
 
 .custom .stick {
@@ -98,6 +116,15 @@
     top: 110px;
     left: 144px;
 }
+
+.custom.disconnected .dpad {
+    display: none;
+}
+
+.custom.disconnected .abxy  {
+    display: none;
+}
+
 .custom .face{
     background: url(d-pad.png);
     position: absolute;
