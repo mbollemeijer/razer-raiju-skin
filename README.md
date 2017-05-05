@@ -8,7 +8,7 @@ https://mbollemeijer.github.io/razer-raiju-skin/raiju.css
 
 ## Preview
 
-![Alt text](previw.png?raw=true "Preview")
+![Alt text](preview.png?raw=true "Preview")
 
 #### Versions
 
