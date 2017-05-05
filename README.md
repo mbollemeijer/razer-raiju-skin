@@ -12,4 +12,4 @@ https://mbollemeijer.github.io/razer-raiju-skin/raiju.css
 
 #### Versions
 
-0.1	- Initial relase.
+0.1	- Initial release.
