@@ -15,7 +15,7 @@
     height: 47px;
     position: absolute;
     left: 144px;
-    top: 15px;
+    top: 9px;
 }
 
 .custom.disconnected .trigger {
@@ -35,12 +35,15 @@
 
 .custom .trigger.left {
     float: left;
-
+    margin-left: 1px;
+    margin-top: 1px;
 }
 
 .custom .trigger.right {
     transform: scaleX(-1);
     float: right;
+    margin-right: 1px;
+    margin-top; 1px;
 }
 
 .custom .bumpers {
@@ -175,8 +178,8 @@
 /* base class used to simplify the sprite mapping */
 .custom .button{
 position: absolute;
-    width: 55px;
-    height: 55px;
+    width: 56px;
+    height: 56px;
     background: url(face.svgz);
     // background: url(ps3-assets/face-buttons.png);
 }
@@ -189,12 +192,12 @@ position: absolute;
     left: 50px;
 }
 .custom .b{
-    background-position: -55px 0;
+    background-position: -56px 0;
     top: 50px;
     right: 0px;
 }
 .custom .x{
-    background-position: -115px 0;
+    background-position: -113px 0;
     top: 50px;
 }
 .custom .y{
